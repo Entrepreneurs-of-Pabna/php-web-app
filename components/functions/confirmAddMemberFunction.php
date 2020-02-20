@@ -7,9 +7,13 @@ if($_GET['action']=='confirm' && isset($_GET['id'])) {
   $statement = $con->prepare('
   select * from new_members where id = :id
   ');
-
   $statement->execute([ ':id' => $id ]);
   $member = $statement->fetchAll(PDO::FETCH_OBJ);
+  
+  
+  $statement1 = $con->prepare('select max(id)+1 as max_id from members');
+  $statement1->execute();
+  $max_id = $statement1->fetchAll(PDO::FETCH_OBJ);
 
 }
 // Store inserted Data
@@ -35,10 +39,10 @@ if(
     $is_approve     = $_POST['is_approve'];
     // $occupation     = array();
 
-    if($_POST['avater'] && !empty($_POST['avater']) ) {
+    if(!empty($_POST['avater']) ) {
       $avater       = $_POST['avater'];
       $ext          = pathinfo($avater, PATHINFO_EXTENSION);
-      $newfilename  = $member[0]->id.'.'.$ext;
+      $newfilename  = $max_id[0]->max_id.'.'.$ext;
       // Move Avater File
       rename($root.'/tmp/'.$avater, $root.'/images/'.$newfilename);
       $avater       = $newfilename;

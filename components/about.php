@@ -1,5 +1,17 @@
 <div class="container">
-  <h4 class="display-4">About Us</h4>
-  <hr>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ipsum dolore enim doloribus hic possimus sapiente, voluptates expedita assumenda vero ratione soluta architecto voluptatem deserunt aliquid inventore magnam neque suscipit incidunt molestiae reiciendis? Provident qui voluptatem debitis totam nulla, iure architecto voluptas cupiditate ratione aspernatur, earum voluptate quibusdam quos fugit, repellat fugiat tempore eaque perspiciatis similique? Doloribus consectetur exercitationem vel eaque, modi iste quis natus esse beatae, temporibus voluptatibus eum soluta possimus dolor cum voluptas. Non nemo, et, perspiciatis consequuntur ex aut tempore, expedita porro ipsam modi dolor doloribus quo harum nam! Accusantium libero porro in, a obcaecati voluptate ipsum nobis debitis molestias dolorum dolores quas, dignissimos modi veritatis laboriosam quam nesciunt quisquam blanditiis quo quidem. Sequi, temporibus. Cupiditate accusantium necessitatibus perferendis hic quo dolorum perspiciatis, dolor fugiat in. Aliquid doloremque fugit natus itaque facilis, harum possimus ratione tenetur. Perferendis, vitae facilis aspernatur nihil voluptatibus a porro, eum quisquam distinctio exercitationem delectus nemo cum, laborum est laudantium possimus sit harum quas officiis quibusdam earum. Qui, sapiente. Expedita error optio similique impedit. Modi quibusdam similique, eligendi quos officia enim veniam ea sunt, voluptatem neque porro labore nulla aut consectetur. Vero expedita id quasi assumenda cumque aspernatur tempora provident alias facere deserunt perspiciatis fugit ullam, enim voluptate eveniet quis omnis veniam minima officia asperiores, placeat explicabo! Sequi, ipsa? Consequuntur enim unde, id dolores qui ea? Sed distinctio cumque aliquam ad, aut doloremque sequi beatae iure, a debitis atque possimus voluptates quaerat quasi ex magnam! Obcaecati modi nesciunt qui ducimus? In, officia mollitia!</p>
+    <img src="<?= $url ?>/images/logo.jpg" class="container-fluid" alt="Entrepreneurs Of Pabna" >
+  <br/> <br/>
+  <h2>নিজের বলার মত একটা গল্প তৈরি করতে চান?</h2>
+  <hr/>
+<h4>আপনার কি "নিজের বলার মত একটা গল্প" গ্রুপ সম্পর্কে ধারণা আছে?</h4>
+<p>
+এটা নতুন উদ্যোক্তাদের বিনামূল্যে প্রশিক্ষণ, পরামর্শ ও সহায়তা করার একটি সেচ্ছাসেবামূলক গ্রুপ বা সংগঠন। যার নেতৃত্ব দিচ্ছেন উদ্যোক্তাদের বিজ্ঞ পথপ্রদর্শক ইকবাল বাহার জাহিদ স্যার। টানা ৯০ দিন অনলাইন কর্মশালার মাধ্যমে তিনি উদ্যোক্তাদের দক্ষ করে তুলছেন। এ রকম টানা ৯০ দিনের কর্মশালার উদাহরণ আজ পর্যন্ত কেউ তৈরি করেনি। তিনি উদ্যোক্তা তৈরির মাধ্যমে বাংলাদেশের বেকার সমস্যাকে ক্রমান্বয়ে দূর করছেন। সেই দিন বেশি দূরে নয় যে দিন এই প্লাটফর্মের মাধ্যমে বাংলাদেশের বেকার সমস্যা দূর হবে।</p>
+<p>
+এই গ্রুপটি শুধু উদ্যোক্তা তৈরির মধ্যেই সীমাবদ্ধ নয়। মানুষকে রক্তদান, যে কোন দুর্যোগে ক্ষতিগ্রস্তদের সাহায্য করা, ছোট ও সফল ব্যাবসায়ীকে Utv live এ নিয়ে এসে তার সফলতার গল্প দেশ ও বিদেশের সকল মানুষের সামনে তুলে ধরা। এই গ্রুপ ও ওয়েবসাইটে নতুন উদ্যোক্তাদের পণ্যের বিক্রয় ও প্রচারের সুযোগ সহ আরো অনেক সুবিধা রয়েছে।
+</p><p>
+এই গ্রুপের মাধ্যমে আপনি সারা বাংলাদেশের যে কোন স্থানে, যে কোন ধরনের বিপদ বা সমস্যায় পড়লে District Ambassador, Campus ambassador এবং Volunteer দের মাধ্যমে প্রাথমিক সাহায্য পাবেন। শুধু বাংলাদেশে নয় বিদেশেও আপনি সাহায্য পাবেন। কারণ বিদেশে আমাদের Country Ambassador গণ রয়েছে।
+</p><p>
+এ ছাড়াও আপনার নতুন উদ্যোগ ও ব্যাবসার সকল প্রকার সাহায্য পাবেন এক লক্ষেরও অধিক ভালো মানুষের এই পরিবার থেকে।
+</p><p>
+এখন সিদ্ধান্ত আপনার, ভালো মানুষের এই বিশাল পরিবারে যুক্ত হয়ে নিজের একটি বলার মত গল্প তৈরি করবেন কিনা।</p>
 </div>

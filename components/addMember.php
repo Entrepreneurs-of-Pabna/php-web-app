@@ -190,7 +190,7 @@ include $root.'/components/functions/settingsFunction.php';
             
 
             <div class="custom-file mb-3">
-              <input type="file" class="custom-file-input" id="avater" name="avater">
+              <input type="file" accept="image/*" class="custom-file-input" id="avater" name="avater">
               <label class="custom-file-label" for="avater">Upload Profile Picture</label>
 
             </div>

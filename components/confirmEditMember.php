@@ -170,7 +170,10 @@
 
             <button type="submit" class="btn btn-success mt-2">Confirm Update</button>
           
+          <?php if($auth): ?>
           <a class="btn btn-danger mt-2" href="<?=$url?>?action=delete_update_req&id=<?= $member[0] ->id ?>">Delete Member</a>
+          <?php endif;?>
+          
           </div>
         </form>
       </div> <!-- /.edit-member -->

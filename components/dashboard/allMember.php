@@ -29,7 +29,7 @@
         <td><?= $member->member_rule ?></td>
         <td><?= $member->present_address.', '.$member->city ?></td>
         <td><a href="tel:+88<?= $member->phone ?>"><?= $member->phone ?></a></td>
-        <td><a href="<?= $member->facebook ?>" class="btn btn-sm btn-primary">Facebook</a></td>
+        <td><a href="//<?= $member->facebook ?>" class="btn btn-sm btn-primary">Facebook</a></td>
         <td><?= $member->blood_group ?></td>
       </tr>
       <?php endforeach;?>

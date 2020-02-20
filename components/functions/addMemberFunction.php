@@ -1,10 +1,6 @@
 <?php
 // Store inserted Data
-if(
-  isset($_POST['name']) &&
-  isset($_POST['phone']) &&
-  isset($_POST['present_address'])
-  ) {
+if(isset($_POST['name'])) {
     $name           = $_POST['name'];
     $gender         = $_POST['gender'];
     $phone          = $_POST['phone'];
@@ -21,15 +17,21 @@ if(
     $about          = $_POST['about'];
     // $occupation     = array();
 
-    $statement = $con->prepare(
-    'select * from members, new_members
-      where members.phone= '.$phone.' or
-        new_members.phone = '.$phone.' or
-        members.email = '.$email.' or
-        new_members.email = '.$email
-      );
-    $statement->execute();
-    $isExist = $statement->fetchAll(PDO::FETCH_OBJ);
+
+    // Chack mail/phone exist
+    $statement1 = $con->prepare(
+      'select * from members, new_members
+        where members.phone = :phone or
+          new_members.phone = :phone limit 1'
+    );
+    $statement1->execute([':phone' => $phone, ':email' => $email]);
+    $isExist = $statement1->fetchAll(PDO::FETCH_OBJ);
+
+    if(sizeof($isExist)) {
+        echo '<script>alert("This Phone or Email is already exist or missing some information. Please Provide again.")</script>';
+
+    } else if( !empty($_POST['phone']) && !empty($_POST['present_address']) && !sizeof($isExist)){
+
 
     // Upload Profile Picture Functions
     if($_FILES['avater'] && !empty($_FILES['avater'])) {
@@ -101,7 +103,10 @@ if(
       ]);
 
       
-      echo '<script>alert("Member ( '.sizeof($isExist). $name .' ) has been Added Successfully. Please Wait for Review.")</script>';
+      echo '<script>alert("Member ( '. $name .' ) has been Added Successfully. Please Wait for Review.")</script>';
+    } else {
+      echo '<script>alert("Something be Wrong.")</script>';
+  }
 }
 
 

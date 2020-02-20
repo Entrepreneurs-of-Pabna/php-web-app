@@ -1,18 +1,1 @@
-/* Import External Stylesheet */
-@import 'src/bootstrap.min.css';
-
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-
-/* import Internal stylesheets */
-@import 'css/main.css';
-@import 'css/navbar.css';
-@import 'css/sidebar.css';
-@import 'css/singleMember.css';
-@import 'css/addMember.css';
-@import 'css/dashboard.css';
-@import 'css/notice.css';
-@import 'css/allMembers.css';
-@import 'css/settings.css';
-
-
+@import'//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css';@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');@import'css/style.min.css';*{padding:0;margin:0;box-sizing:border-box}body{font-family:'Ubuntu', sans-serif}.wrapper{width:100%;display:grid;grid-template-columns:70px auto;grid-gap:10px}.contentbar{grid-column:2;grid-row:1;margin-top:60px}.bold{font-weight:bold}.cursor-pointer{cursor:pointer !important}.gap-100{height:100px}.gap-50{height:50px}.sidebar::-webkit-scrollbar,body::-webkit-scrollbar{background-color:#fff;width:12px}.sidebar::-webkit-scrollbar-track,body::-webkit-scrollbar-track{background-color:#fff}.sidebar::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background-color:#babac0;border-radius:16px;border:4px solid #fff}.sidebar::-webkit-scrollbar-button,body::-webkit-scrollbar-button{display:none}nav{height:60px}.navbar-nav{background:#fff !important}.right-toogle{display:inline-block;cursor:pointer}.rotate{transform:rotate(-180deg)}.sidebar{height:100vh;background:#ffffffdd;grid-row:1;overflow-y:scroll;position:fixed;top:60px;bottom:0;left:0;z-index:10}.sidebar ul{list-style:none;margin-bottom:70px}.sidebar li{width:100%;height:70px;padding:5px;display:flex;cursor:pointer}.sidebar img{width:60px;height:60px;border:2px solid #00d100;padding:3px;border-radius:50%}.sidebar .name{line-height:10px;margin:auto 10px;display:none}.sidebar li:hover{background:#dddddd80;border-right:5px solid #00d100}.member-photo{width:100%;border-radius:10px;border:1px solid #000}.add-member label,.edit-member label{margin-top:20px !important}.edit-member img{border:1px solid #ccc;border-radius:5px}.dash-card{width:300px;height:150px;border:1px solid #000;border-radius:10px;text-align:center;padding:25px;cursor:pointer;margin:10px auto}.dash-card:hover{background:#dae3ff}.login-card{margin-top:100px;position:absolute;top:50%;left:50%;transform:translateX(-50%)}td > img{width:50px;border-radius:5px}.member-search{width:400px;border:0.5px solid #ccc;border-radius:5px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.btn-tag{padding:5px 10px;margin:5px;border:1px solid #007bff;border-radius:999px;line-height:1.2}

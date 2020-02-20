@@ -62,8 +62,10 @@ if($_GET && $_GET['action']=="login"){
 } else if($_GET && $_GET['goto']=='about') {
   include $root.'/components/about.php';
 
-} else {
+} else if($_GET['member_id']) {
   include $root.'/components/singleMember.php';
+} else {
+  include $root.'/components/about.php';
 }
 
 

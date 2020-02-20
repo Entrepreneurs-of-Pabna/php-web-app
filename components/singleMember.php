@@ -7,7 +7,12 @@
     $statement = $con->prepare(' select * from members where id = :id ');
     $statement->execute([ ':id' => $member_id ]);
     $member = $statement->fetchAll(PDO::FETCH_OBJ);
-  
+    
+    if(!sizeof($member)) {
+        $statement = $con->prepare(' select * from members limit 1 ');
+        $statement->execute();
+        $member = $statement->fetchAll(PDO::FETCH_OBJ);
+    }
   } else {
     $statement = $con->prepare(' select * from members limit 1 ');
     $statement->execute();
@@ -24,7 +29,7 @@
     <div class="col-md-5 text-center">
       <img class="member-photo" src="<?= $url.'/images/'.$member[0]->avater?>" alt="<?= $member[0]->name ?>">
       <?php if($member[0]->facebook): ?>
-        <button class="btn btn-primary mt-2" onclick="window.location='//<?= $member[0]->facebook ?>'">Facebook</button>
+        <a class="btn btn-primary mt-2" href="//<?= $member[0]->facebook ?>" target="_blank">Facebook</a>
       <?php endif; ?>
     </div> <!-- /.col-md-5 -->
 
@@ -81,6 +86,11 @@
             <td class="td-key"> Batch </td>
             <td>:</td>
           <td> <?= $member[0]->batch ?> </td>
+        </tr>
+        <tr>
+          <td>About</td>
+          <td>:</td>
+          <td><?= $member[0]->about ?></td>
         </tr>
       </table>
       <!-- <table class="table table-hover">
