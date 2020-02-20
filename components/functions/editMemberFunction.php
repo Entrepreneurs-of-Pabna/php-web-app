@@ -44,7 +44,7 @@ if(
       move_uploaded_file($filetmp, $upload_dir.$avater);
 
     } 
-    else if(!empty($_FILES['avater']) ) {
+    else if(isset($_POST['avater']) && !empty($_POST['avater']) && empty($_FILES['avater']) ) {
       $ext = pathinfo($member[0]->avater, PATHINFO_EXTENSION);
       copy($root.'/images/'.$member[0]->avater, $root.'/tmp/'.$member[0]->id.'.'.$ext);
       $avater  = $member[0]->id.'.'.$ext;

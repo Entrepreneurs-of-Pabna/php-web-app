@@ -27,7 +27,7 @@ if($_GET['action']=='edit' && isset($_GET['id']) && sizeof($member)) { ?>
               </div>
               <div class="col-md-7">
                 <div class="custom-file mb-3">
-                  <input type="file" class="custom-file-input" id="avater" name="avater">
+                  <input type="file" class="custom-file-input" id="avater" name="f_avater">
                   <label class="custom-file-label" for="avater">Upload Profile Picture</label>
 
                 </div>
@@ -172,32 +172,28 @@ if($_GET['action']=='edit' && isset($_GET['id']) && sizeof($member)) { ?>
             <label for="about">Enter Yourself</label>
             <textarea class="form-control" name="about" id="about" cols="30" rows="5"><?= $member[0]->about ?></textarea>
             <button type="submit" class="btn btn-success mt-2">Update Member</button>
-          
-          <a class="btn btn-danger mt-2" href="<?=$url?>?action=delete&id=<?= $member[0] ->id ?>">Delete Member</a>
-          </div>
+
+            <?php if($auth): ?>
+            <a class="btn btn-danger mt-2" href="<?=$url?>?action=delete&id=<?= $member[0] ->id ?>">Delete Member</a>
+            <?php endif;?>
+
+        </div>
         </form>
       </div> <!-- /.edit-member -->
 
     </div> <!-- /.col-md-8 /.offset-2 -->
   </div> <!-- /.row -->
   <?php } else { ?>
-    <div class="card member-search">
-    <div class="card-body text-center my-3">
-      <h2>Update Member</h2>
-
-      <form class="my-4" action="" method="get">
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-10">
-              <input type="hidden" name="action" value="edit">
-              <input type="text" class="form-control" id="id" name="id" placeholder="member ID" autocomplete="off">
-            </div>
-              <button class="btn btn-success ml-2">↺</button>
-          </div>
-        </div>
-
+    <div class="card login-card" style="width: 18rem;">
+    <div class="card-body">
+      <h4 class="card-title text-center">Update Member</h4>
+      <form action="" method="get">
+        <input type="hidden" name="action" value="edit">
+        <input type="text" class="form-control mb-2" id="id" name="id" placeholder="member ID" autocomplete="off">
+        <button type="submit" class="btn btn-success form-control" >Go</button>
       </form>
-    </div> <!-- /.card-body /.login-card -->
+      
+    </div>
   </div> <!-- /.card -->
   <?php }?>
 </div> <!-- /.container -->
