@@ -1,0 +1,18 @@
+/* Import External Stylesheet */
+@import 'src/bootstrap.min.css';
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+/* import Internal stylesheets */
+@import 'css/main.css';
+@import 'css/navbar.css';
+@import 'css/sidebar.css';
+@import 'css/singleMember.css';
+@import 'css/addMember.css';
+@import 'css/dashboard.css';
+@import 'css/notice.css';
+@import 'css/allMembers.css';
+@import 'css/settings.css';
+
+

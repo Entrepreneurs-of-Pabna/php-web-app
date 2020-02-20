@@ -1,0 +1,6 @@
+.add-member label, .edit-member label {margin-top: 20px !important}
+
+.edit-member img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
